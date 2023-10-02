@@ -1,31 +1,23 @@
 package us.kvitko.universityapp.entity;
 
 public class University {
-    private String name;
-    private String teacher;
-    private String student;
 
-    public String getName() {
-        return name;
-    }
+    private Student student;
+    private Teacher teacher;
 
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public String getTeacher() {
-        return teacher;
-    }
-
-    public void setTeacher(String teacher) {
+    public void setTeacher(Teacher teacher) {
         this.teacher = teacher;
     }
 
-    public String getStudent() {
-        return student;
+    public Teacher getTeacher() {
+        return teacher;
     }
 
-    public void setStudent(String student) {
+    public void setStudent(Student student) {
         this.student = student;
+    }
+
+    public Student getStudent() {
+        return student;
     }
 }
